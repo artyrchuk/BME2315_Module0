@@ -135,7 +135,7 @@ def sum_even_fib(limit):
     a, b = 0, 1
     total = 0
     while b <= limit:
-        if b % 2 != 0:  # This line checks if the Fibonacci number is odd
+        if b % 2 != 0:  # This line checks if the Fibonacci number is odd now used to be checking if it was even
             total += b
         a, b = b, a + b
     return total
@@ -144,7 +144,7 @@ print(sum_even_fib(13))  # Expected output: 23 (1 + 1 + 3 + 5 + 13)
 # Add your test cases here
 """
 for the original code I firstly put the limit to 13 and I expected the output to be 23 (1+1+3+5+13) but the output was different
-since it is checking for whether b is even and the if it is it adds b to the sum which is not what we want, instead we want to
-check if it odd
+since it was checking for whether b is even and the if it was it adds b to the sum which is not what we want, instead we want to
+check if it is odd
 """
 # %%
